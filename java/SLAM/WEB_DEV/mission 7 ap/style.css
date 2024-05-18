@@ -1,0 +1,249 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, sans-serif;
+        }
+		
+		
+
+        body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("https://www.iles.com/images/xl/plage-belle-ile-mer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(5px); /* Applique un flou à l'arrière-plan seulement */
+}
+
+        .header {
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            background-color: rgba(240, 240, 240, 0.8);
+			margin-bottom: 10px;
+			align-content: stretch;
+        }
+
+        .header ul {
+            display: flex;
+            list-style-type: none;
+			
+			
+        }
+
+        .header ul li {
+			
+            padding: 20px 0;
+			text-align:center;
+			text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+        }
+		
+		.header li{
+			
+			padding: 5px;
+			margin-right: 50px;
+			margin-left: 50px;
+			color:blue;
+			
+		}
+
+	.header  li{
+
+		text-align: center;
+		padding: 5px 5px 5px 5px;
+		
+	}
+		.header li:hover , .header a:hover{
+			
+			background-color: rgba(240, 240, 240, 0.9);
+			
+		}
+		.entree{
+			
+			padding: 20% 22% 25% 22%; /* haut droite bas gauche*/
+			text-align: center;
+			color: white;
+			font-size: 40px;
+			
+		}
+		.entree h1{
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+			
+		}
+		.texte{
+			background-color: white;
+		}
+		.deuxDiv{
+			display:flex;
+			flex-direction: column;
+			justify-content: space-between;
+		
+			
+		}
+
+        .body {
+			
+            display: flex;
+            flex-direction: row;
+            justify-content: center; 
+            margin: 0 20% 0 20%;
+            padding: 20px 20px 20px 20px;/* haut gauche bas droite*/
+			border: none; 
+            border-radius: 10px;
+			
+        }
+		
+
+
+
+/* Media Queries pour les écrans de petite taille */
+@media screen and (max-width: 767px) {
+    .body {
+        margin: 0 10%; /* Réduire encore la marge sur les côtés */
+		
+    }
+}
+.photo {
+	
+	width: 600px;
+	height: 400px;
+	
+}
+
+        .section {
+			display:flex;
+			flex-direction: column;
+            margin-bottom: 100px; 
+			margin-right: 10%;
+			border: 5px solid white;
+			margin-top:-100px;
+			width:auto;
+        }
+		.section ul li{
+			list-style-type: none;
+			
+		}
+
+        .section h1 {
+
+            margin: 0 0 20px;
+            font-size: 60px;
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+			color: white;
+			
+        }
+		#description{
+			
+			padding: 20px 20px 20px 20px;
+			margin-top: -140px;
+			margin-bottom: 0px;
+			border-color: grey;
+			
+		}
+		.logo-container {
+            display: flex;
+            align-items: center; 
+        }
+
+        .logo {
+            width: 90px;
+			margin-right: 200px;
+        }
+		.image{
+			background-color: rgba(19, 100, 183, 0.3);
+			
+			width: 100%;
+			height: 200px;
+			display: flex;
+			justify-content: space-evenly;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+		
+}
+
+.btn-container {
+            display:flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn{
+            padding: 20px 40px; 
+            background-color: rgba(19, 100, 183, 0.78); 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+			margin-top: 50px;
+        }
+
+        .btn:hover {
+            background-color: #fffff;
+			}
+a {
+
+text-decoration: none;
+color: black;
+}
+
+.secondePartie{
+	background-color:white;
+	margin-top: 10%;
+	padding: 2%;
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+	padding: auto 10% auto 10%;
+	
+	
+}
+.plan h1{
+	
+	font-size: 50px;
+	
+}
+.plan p{
+	
+	font-size: 20px;
+	
+}
+.secondePartie .photo{
+	width: 1000px;
+	height: 800px;
+}
+.plan {
+	
+	margin-left: 10%;
+	
+	margin-right: 10%;
+}
+
+.footer{
+	
+	margin-top: 10px;
+	background-color: rgba(19, 100, 183, 0.78); 
+	
+
+}
+.footer ul{
+	display:flex;
+	justify-content: center;
+	padding: 40px;
+	color: white;
+	text-decoration: none;
+
+}
+.footer li{
+
+	margin-right: 40px;
+}
+.footer a{
+	color: white;
+	text-decoration: none;
+}

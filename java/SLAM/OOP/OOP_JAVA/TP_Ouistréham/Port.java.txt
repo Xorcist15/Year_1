@@ -1,0 +1,67 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package ouistreham;
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author hlhelguen
+ */
+public class Port {
+       private ArrayList<ZoneStockage> lesZones;
+    
+    public Port(){
+        this.lesZones = new ArrayList<ZoneStockage>();
+    }
+    
+    //Méthodes publiques
+    public void ajouterZoneStockage(ZoneStockage uneZone){
+        this.lesZones.add(uneZone);
+    }
+    
+    public void  decharger(Navire unNavire) {
+        String rapport = "";
+        ZoneStockage zoneEnCours;
+        int quantite;
+        
+        int i = 0;
+
+        //Tant que le navire n'est pas déchargé
+        while(!unNavire.estDecharge() && i < this.lesZones.size()){
+            //Je récupère la zone en cours
+            zoneEnCours = this.lesZones.get(i);
+        
+            //Je teste si la zone n'est pas remplie
+            if(!zoneEnCours.estRemplie()){
+                
+                //Déterminer la quantité à utiliser
+                if(zoneEnCours.getCapaDispo() >= unNavire.getQuantiteFret()){
+                    quantite = unNavire.getQuantiteFret();
+                }
+                else{
+                    quantite = zoneEnCours.getCapaDispo();
+                }
+                
+                //Décharger le navire et stocker dans la zone
+                unNavire.decharger(quantite);
+                zoneEnCours.stocker(quantite);
+                
+                //Enrichir le rapport
+                rapport = rapport + zoneEnCours.getNom() + " -> " + quantite + "\n";
+            }
+            //Aller à la zone suivante
+            i++;
+        }
+        
+        if(unNavire.estDecharge()){
+            rapport += "Le navire est totalement déchargé";
+        }
+        else{
+            rapport += "Le navire n'est pas totalement déchargé, il reste " + unNavire.getQuantiteFret() + " tonnes";
+        }
+        System.out.println(rapport);
+    }
+}

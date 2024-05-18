@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP_Fichiers_Sequentiels", "TP_Fichiers_Sequentiels\TP_Fichiers_Sequentiels.csproj", "{8FC134FE-3464-4B6A-89CB-C9F9FF3AD31D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FC134FE-3464-4B6A-89CB-C9F9FF3AD31D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC134FE-3464-4B6A-89CB-C9F9FF3AD31D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC134FE-3464-4B6A-89CB-C9F9FF3AD31D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC134FE-3464-4B6A-89CB-C9F9FF3AD31D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1465F2D4-8118-4F21-9E8E-7865EA809039}
+	EndGlobalSection
+EndGlobal

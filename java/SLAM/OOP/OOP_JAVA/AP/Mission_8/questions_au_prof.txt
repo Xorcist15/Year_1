@@ -1,0 +1,5 @@
+classe reservation :
+    1. avoir une collection de voiture ou un seul objet voiture
+    2. visilbité de la propriété bateau dans traversée (pour comparer la nbP dans reservation à la capacité du bateau)
+    3. suppression des méthdoes et propriétés ne contribuant rien à l'exercice
+    4. mettre le nom de l'ile ou le nom du bateau dans la description de la reservation

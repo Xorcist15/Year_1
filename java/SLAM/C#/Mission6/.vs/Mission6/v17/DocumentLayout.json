@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\container\\SIO\\SLAM\\C#\\Mission6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{83E2427A-04DC-4A23-9101-5B0E1C7AD0C5}|Mission6\\Mission6.csproj|d:\\container\\sio\\slam\\c#\\mission6\\mission6\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E2427A-04DC-4A23-9101-5B0E1C7AD0C5}|Mission6\\Mission6.csproj|solutionrelative:mission6\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E2427A-04DC-4A23-9101-5B0E1C7AD0C5}|Mission6\\Mission6.csproj|D:\\container\\SIO\\SLAM\\C#\\Mission6\\mission6\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83E2427A-04DC-4A23-9101-5B0E1C7AD0C5}|Mission6\\Mission6.csproj|solutionrelative:mission6\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E2427A-04DC-4A23-9101-5B0E1C7AD0C5}|Mission6\\Mission6.csproj|D:\\container\\SIO\\SLAM\\C#\\Mission6\\mission6\\bateau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E2427A-04DC-4A23-9101-5B0E1C7AD0C5}|Mission6\\Mission6.csproj|solutionrelative:mission6\\bateau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E2427A-04DC-4A23-9101-5B0E1C7AD0C5}|Mission6\\Mission6.csproj|D:\\container\\SIO\\SLAM\\C#\\Mission6\\mission6\\port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E2427A-04DC-4A23-9101-5B0E1C7AD0C5}|Mission6\\Mission6.csproj|solutionrelative:mission6\\port.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E2427A-04DC-4A23-9101-5B0E1C7AD0C5}|Mission6\\Mission6.csproj|D:\\container\\SIO\\SLAM\\C#\\Mission6\\mission6\\traversee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E2427A-04DC-4A23-9101-5B0E1C7AD0C5}|Mission6\\Mission6.csproj|solutionrelative:mission6\\traversee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Traversee.cs",
+              "DocumentMoniker": "D:\\container\\SIO\\SLAM\\C#\\Mission6\\Mission6\\Traversee.cs",
+              "RelativeDocumentMoniker": "Mission6\\Traversee.cs",
+              "ToolTip": "D:\\container\\SIO\\SLAM\\C#\\Mission6\\Mission6\\Traversee.cs",
+              "RelativeToolTip": "Mission6\\Traversee.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAwwBwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T12:49:33.879Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bateau.cs",
+              "DocumentMoniker": "D:\\container\\SIO\\SLAM\\C#\\Mission6\\Mission6\\Bateau.cs",
+              "RelativeDocumentMoniker": "Mission6\\Bateau.cs",
+              "ToolTip": "D:\\container\\SIO\\SLAM\\C#\\Mission6\\Mission6\\Bateau.cs",
+              "RelativeToolTip": "Mission6\\Bateau.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T12:55:14.103Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Port.cs",
+              "DocumentMoniker": "D:\\container\\SIO\\SLAM\\C#\\Mission6\\Mission6\\Port.cs",
+              "RelativeDocumentMoniker": "Mission6\\Port.cs",
+              "ToolTip": "D:\\container\\SIO\\SLAM\\C#\\Mission6\\Mission6\\Port.cs",
+              "RelativeToolTip": "Mission6\\Port.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T12:55:33.316Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\container\\SIO\\SLAM\\C#\\Mission6\\Mission6\\Form1.cs",
+              "RelativeDocumentMoniker": "Mission6\\Form1.cs",
+              "ToolTip": "D:\\container\\SIO\\SLAM\\C#\\Mission6\\Mission6\\Form1.cs",
+              "RelativeToolTip": "Mission6\\Form1.cs",
+              "ViewState": "AQIAAC8AAACAMjMzMzMDwD0AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T12:41:26.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\container\\SIO\\SLAM\\C#\\Mission6\\Mission6\\Form1.cs",
+              "RelativeDocumentMoniker": "Mission6\\Form1.cs",
+              "ToolTip": "F:\\SIO\\SLAM\\C#\\Mission6\\Mission6\\Form1.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T12:37:31.308Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

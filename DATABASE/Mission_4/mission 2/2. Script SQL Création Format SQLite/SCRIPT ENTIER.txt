@@ -1,0 +1,92 @@
+CREATE TABLE Lieu(
+   id INTEGER,
+   nom TEXT,
+   informations TEXT,
+   ile INTEGER,
+   PRIMARY KEY(id)
+);
+
+CREATE TABLE Bateau(
+   id INTEGER,
+   nom TEXT,
+   longueur REAL,
+   largeur REAL,
+   vitesse REAL,
+   nbPassager INTEGER,
+   nbVehicule INTEGER,
+   PRIMARY KEY(id)
+);
+
+CREATE TABLE Port(
+   id INTEGER,
+   nom TEXT,
+   adresse TEXT,
+   codePostal TEXT,
+   ville TEXT,
+   idLieu INTEGER NOT NULL,
+   PRIMARY KEY(id),
+   FOREIGN KEY(idLieu) REFERENCES Lieu(id)
+);
+
+CREATE TABLE Trajet(
+   id INTEGER,
+   idPortDepart INTEGER NOT NULL,
+   idPortArrivee INTEGER NOT NULL,
+   PRIMARY KEY(id),
+   FOREIGN KEY(idPortDepart) REFERENCES Port(id),
+   FOREIGN KEY(idPortArrivee) REFERENCES Port(id)
+);
+
+CREATE TABLE utiliser(
+   idTrajet INTEGER,
+   idBateau INTEGER,
+   duree TEXT,
+   PRIMARY KEY(idTrajet, idBateau),
+   FOREIGN KEY(idTrajet) REFERENCES Trajet(id),
+   FOREIGN KEY(idBateau) REFERENCES Bateau(id)
+);
+
+INSERT INTO Lieu(id, nom, informations, ile)
+VALUES
+	(1, 'Continent', ' ',0),
+	(2, 'Ile de Groix', ' ', 1),
+	(3, 'Belle-Ile', ' ', 1),
+	(4, 'Ile de Houat', ' ', 1),
+	(5, 'Ile de Hoëdic', ' ', 1);
+
+INSERT INTO Port(id, nom, adresse, codePostal, ville, idLieu)
+VALUES
+	(1, 'Lorient', 'Rue Gilles Gahinet', '56100', 'Lorient', 1),
+	(2, 'Quiberon', '8 Quai de l Océan', '56170', 'Quiberon', 1),
+	(3, 'Port Tudy', 'Port Tudy', '56590', 'Groix',2),
+	(4, 'Sauzon', 'Port Bihan', '56360', 'Sauzon', 3),
+	(5, 'Le Palais', 'Quai Bonnelle', '56360', 'Le Palais', 3),
+	(6, 'Houat', 'Port de Saint-Gildas', '56170', 'Île-d Houat', 4),
+	(7, 'Hoedic', 'Gare Maritime de Hoëdic', '56170', 'Hoedic', 5);
+
+INSERT INTO Bateau(id, nom, longueur, largeur, vitesse, nbPassager, nbVehicule)
+VALUES
+	(1, 'BREIZH NEVEZ 1', 43.5, 11.6, 11.5, 300, 18),
+	(2, 'L ILE DE GROIX', 46, 12, 12, 450, 32),
+	(3, 'BANGOR', 46, 12, 12, 450, 32),
+	(4, 'VINDILIS', 48, 12.50, 12, 399, 39),
+	(5, 'KERDONIS', 30.75, 8, 20, 295, 0),
+	(6, 'MELVAN', 31, 8.06, 16.5, 234, 3);
+
+INSERT INTO Trajet(id, idPortDepart, idPortArrivee)
+VALUES
+	(1, 2, 5),
+	(2, 2, 4),
+	(3, 2, 6),
+	(4, 2, 7),
+	(5, 2, 3),
+	(6, 1, 2);
+INSERT INTO utiliser(idTrajet, idBateau, duree)
+VALUES
+	(1, 3, '00:45'),
+	(1, 5, '00:30'),
+	(3, 6, '00:40'),
+	(4, 6, '00:55'),
+	(6, 2, '00:45'),
+	(6, 1, '00:45');
+

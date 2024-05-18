@@ -1,0 +1,224 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "TestClass",
+            "request": "launch",
+            "mainClass": "TP_Livreur_Raisins.TestClass",
+            "projectName": "OOP_JAVA_157fe89b"
+        },
+        {
+            "type": "java",
+            "name": "TestClass",
+            "request": "launch",
+            "mainClass": "heritage_exercice_14.TestClass",
+            "projectName": "OOP_JAVA_157fe89b"
+        },
+        {
+            "type": "java",
+            "name": "Mission_8",
+            "request": "launch",
+            "mainClass": "AP.Mission_8.Mission_8",
+            "projectName": "OOP_JAVA_157fe89b"
+        },
+        {
+            "type": "java",
+            "name": "TestClass",
+            "request": "launch",
+            "mainClass": "TP_Livreur_Raisins.TestClass",
+            "projectName": "OOP_JAVA_d860247c"
+        },
+        {
+            "type": "java",
+            "name": "TestClass",
+            "request": "launch",
+            "mainClass": "heritage_exercice_14.TestClass",
+            "projectName": "OOP_JAVA_d860247c"
+        },
+        {
+            "type": "java",
+            "name": "TestLien_1_A_1",
+            "request": "launch",
+            "mainClass": "TestLien_1_A_1",
+            "projectName": "OOP_JAVA_d860247c"
+        },
+        {
+            "type": "java",
+            "name": "SoundexAlgorithm",
+            "request": "launch",
+            "mainClass": "SoundexAlgorithm",
+            "projectName": "OOP_JAVA_d860247c"
+        },
+        {
+            "type": "java",
+            "name": "SoundexAlgorithm",
+            "request": "launch",
+            "mainClass": "SoundexAlgorithm",
+            "projectName": "OOP_JAVA_957f39e9"
+        },
+        {
+            "type": "java",
+            "name": "TestClass",
+            "request": "launch",
+            "mainClass": "lien_ex14.TestClass",
+            "projectName": "OOP_JAVA_957f39e9"
+        },
+        {
+            "type": "java",
+            "name": "OiseauxHeritage",
+            "request": "launch",
+            "mainClass": "lien_exercice_13.OiseauxHeritage",
+            "projectName": "OOP_JAVA_957f39e9"
+        },
+        {
+            "type": "java",
+            "name": "Mission9",
+            "request": "launch",
+            "mainClass": "AP.Mission_9.Mission9",
+            "projectName": "OOP_JAVA_9d7c1c2b"
+        },
+        {
+            "type": "java",
+            "name": "Mission_9",
+            "request": "launch",
+            "mainClass": "AP.Mission_9.Mission_9",
+            "projectName": "OOP_JAVA_9d7c1c2b"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "OOP_JAVA_9d7c1c2b"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "AP.test.Test",
+            "projectName": "OOP_JAVA_9d7c1c2b"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "AP.test.Test",
+            "projectName": "OOP_JAVA_957f39e9"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "AP1_Oceane",
+            "request": "launch",
+            "mainClass": "AP.Mission_1.AP1_Oceane",
+            "projectName": "OOP_JAVA_957f39e9"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "AP.Mission_3.test",
+            "projectName": "OOP_JAVA_957f39e9"
+        },
+        {
+            "type": "java",
+            "name": "Mission_8",
+            "request": "launch",
+            "mainClass": "AP.Mission_8.Mission_8",
+            "projectName": "OOP_JAVA_957f39e9"
+        },
+        {
+            "type": "java",
+            "name": "AlgoDeTri",
+            "request": "launch",
+            "mainClass": "AlgoDeTri",
+            "projectName": "OOP_JAVA_957f39e9"
+        },
+        {
+            "type": "java",
+            "name": "CasMomiTestClass",
+            "request": "launch",
+            "mainClass": "Cas_Momi.CasMomiTestClass",
+            "projectName": "OOP_JAVA_957f39e9"
+        },
+        {
+            "type": "java",
+            "name": "CompositionTestClass",
+            "request": "launch",
+            "mainClass": "Composition.CompositionTestClass",
+            "projectName": "OOP_JAVA_957f39e9"
+        },
+        {
+            "type": "java",
+            "name": "Article_Main",
+            "request": "launch",
+            "mainClass": "Exercice_Articles.Article_Main",
+            "projectName": "OOP_JAVA_957f39e9"
+        },
+        {
+            "type": "java",
+            "name": "Client_Main",
+            "request": "launch",
+            "mainClass": "Exercice_Clients.Client_Main",
+            "projectName": "OOP_JAVA_957f39e9"
+        },
+        {
+            "type": "java",
+            "name": "Compte_Main",
+            "request": "launch",
+            "mainClass": "Exercice_Comptes.Compte_Main",
+            "projectName": "OOP_JAVA_957f39e9"
+        },
+        {
+            "type": "java",
+            "name": "RechercheDichotomique",
+            "request": "launch",
+            "mainClass": "RechercheDichotomique",
+            "projectName": "OOP_JAVA_957f39e9"
+        },
+        {
+            "type": "java",
+            "name": "TestClass",
+            "request": "launch",
+            "mainClass": "TP_Ouistréham.TestClass",
+            "projectName": "OOP_JAVA_957f39e9"
+        },
+        {
+            "type": "java",
+            "name": "TestLien_1_A_1",
+            "request": "launch",
+            "mainClass": "TestLien_1_A_1",
+            "projectName": "OOP_JAVA_957f39e9"
+        },
+        {
+            "type": "java",
+            "name": "TestLien_1_A_1(1)",
+            "request": "launch",
+            "mainClass": "lien_1_a_1.TestLien_1_A_1",
+            "projectName": "OOP_JAVA_957f39e9"
+        },
+        {
+            "type": "java",
+            "name": "test(1)",
+            "request": "launch",
+            "mainClass": "lien_1_a_plusieurs_ex10.test",
+            "projectName": "OOP_JAVA_957f39e9"
+        },
+        {
+            "type": "java",
+            "name": "testClass",
+            "request": "launch",
+            "mainClass": "lien_1_a_plusieurs_ex11.testClass",
+            "projectName": "OOP_JAVA_957f39e9"
+        }
+    ]
+}

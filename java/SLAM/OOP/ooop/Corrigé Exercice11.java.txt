@@ -1,0 +1,96 @@
+//Classe Acteur
+package prjlien1plusieurs;
+
+/**
+ *
+ * @author hlhelguen
+ */
+public class Acteur {
+    //Attributs privés
+    private String nom;
+    private String prenom;
+    
+    //Constructeur
+    public Acteur(String n, String p){
+        this.nom = n;
+        this.prenom = p;
+    }
+    
+    //Accesseur
+    public String getNom(){
+        return this.nom;
+    }
+    
+    public String getPrenom(){
+        return this.prenom;
+    }    
+}
+
+//Classe Film
+package prjlien1plusieurs;
+
+import java.util.ArrayList;
+
+public class Film {
+    //Propriétés privées
+    private String titre;
+    private int annee;
+    private String realisateur;
+    //Etape 1 - Déclaration de la collection
+    private ArrayList<Acteur> lesActeurs;
+    
+    //Constructeur
+    public Film(String t, int a, String r){
+        this.titre = t;
+        this.annee = a;
+        this.realisateur = r;
+        //Etape 2 - Instancier la collection
+        this.lesActeurs = new ArrayList<Acteur>();
+    }
+
+    //Méthodes publiques
+    //Etape 3
+    public void ajouterActeur(Acteur a){
+        this.lesActeurs.add(a);
+    }
+    
+    @Override
+    public String toString(){
+        String res;
+        res = this.titre + " (" + this.annee + ")\n";
+        res = res + "De " + this.realisateur + "\n";
+        res = res + "Avec :\n";
+        //Parcourir la collection
+        for(Acteur unActeur : this.lesActeurs){
+            res = res + "\t" + unActeur.getPrenom() + " " + unActeur.getNom() + "\n";
+        }
+        return res;
+    }
+}
+
+//Classe de test - programme principal
+package prjlien1plusieurs;
+
+public class PrjLien1Plusieurs {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        //Créer un film
+        Film f = new Film("AMERICAN BEAUTY", 1999, "Sam Mendez");
+        
+        //Ajouter des acteurs
+        //Possibilité 1
+        Acteur a1 = new Acteur("Spacy", "Kevin");
+        f.ajouterActeur(a1);
+        
+        //Possibilité 2
+        f.ajouterActeur(new Acteur("Bening", "Annette"));
+        f.ajouterActeur(new Acteur("Birch", "Thora"));
+        f.ajouterActeur(new Acteur("Bentley", "Wes"));               
+        
+        //Afficher la description du film
+        System.out.println(f.toString());
+    }
+}

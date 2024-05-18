@@ -1,0 +1,10 @@
+D:\SIO\S2\SLAM\C#\TD2\TD2_C#_PoidsIdealV2\bin\Debug\TD2_C#_PoidsIdealV2.exe.config
+D:\SIO\S2\SLAM\C#\TD2\TD2_C#_PoidsIdealV2\bin\Debug\TD2_C#_PoidsIdealV2.exe
+D:\SIO\S2\SLAM\C#\TD2\TD2_C#_PoidsIdealV2\bin\Debug\TD2_C#_PoidsIdealV2.pdb
+D:\SIO\S2\SLAM\C#\TD2\TD2_C#_PoidsIdealV2\obj\Debug\TD2_C#_PoidsIdealV2.csproj.AssemblyReference.cache
+D:\SIO\S2\SLAM\C#\TD2\TD2_C#_PoidsIdealV2\obj\Debug\TD2_C__PoidsIdealV2.Form1.resources
+D:\SIO\S2\SLAM\C#\TD2\TD2_C#_PoidsIdealV2\obj\Debug\TD2_C__PoidsIdealV2.Properties.Resources.resources
+D:\SIO\S2\SLAM\C#\TD2\TD2_C#_PoidsIdealV2\obj\Debug\TD2_C#_PoidsIdealV2.csproj.GenerateResource.cache
+D:\SIO\S2\SLAM\C#\TD2\TD2_C#_PoidsIdealV2\obj\Debug\TD2_C#_PoidsIdealV2.csproj.CoreCompileInputs.cache
+D:\SIO\S2\SLAM\C#\TD2\TD2_C#_PoidsIdealV2\obj\Debug\TD2_C#_PoidsIdealV2.exe
+D:\SIO\S2\SLAM\C#\TD2\TD2_C#_PoidsIdealV2\obj\Debug\TD2_C#_PoidsIdealV2.pdb

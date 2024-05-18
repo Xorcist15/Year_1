@@ -1,0 +1,88 @@
+
+//déclarer une collection lesClients
+ArrayList<Client> lesClients;
+
+//instancier la collection
+lesClients = new ArrayList<Client>();
+
+//créer 5 objets Client
+Client c1 = new Client(1, "Loïc", "Colmar");
+...
+Client c5 = new Client(5, "Mattéo", "Strasbourg");
+
+//ajouter ces 5 objets Clients à la collection,
+lesClient.add(c1);
+lesClient.add(new Client(6, "Tanguy", "Colmar"));
+
+//afficher le nom de tous les clients en parcourant 
+// la collection en utilisant une boucle for pour chaque
+for(Client unClient : lesClients){
+	System.out.println(unClient.getNom());
+}
+
+//afficher le nombre de client présents dans la collection
+System.out.println("Il y a " + lesClients.size() + " clients");
+
+//afficher le nom de tous les clients en partant de 
+// la fin en parcourant la collection avec un for classique
+for(int i = lesClients.size() - 1 ; i >= 0 ; i--){
+	System.out.println(lesClients.get(i).getNom());
+}
+
+//Dire si Oui ou Non il y a un client nommé "Wanda"
+// dans la collection
+//Version 1
+boolean trouve = false;
+for(Client unClient : lesClients){
+	if(unClient.getNom().equals("Wanda")){
+		trouve = true;
+	}
+}
+
+if(trouve){
+	System.out.println("oui");
+}
+else{
+	System.out.println("non");
+}
+
+//Version 2
+trouve = false;
+int i = 0;
+while(!trouve && i < lesClients.size()){
+	if(lesClients.get(i).getNom().equals("Wanda")){
+		trouve = true;
+	}
+	i++;	
+}
+if(trouve){
+	System.out.println("oui");
+}
+else{
+	System.out.println("non");
+}
+
+//enlever le client qui se trouve à l'indice 2 
+//(réafficher les noms des clients pour vérifier)
+lesClients.remove(2);
+
+for(Client unClient : lesClients){
+	System.out.println(unClient.getNom());
+}
+
+//vider la collection 
+//(réafficher les noms des clients pour vérifier)
+lesClients.clear();
+
+for(Client unClient : lesClients){
+	System.out.println(unClient.getNom());
+}
+
+
+
+
+
+
+
+
+

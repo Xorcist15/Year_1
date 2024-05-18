@@ -1,0 +1,101 @@
+
+package testarticle;
+
+/**
+ *
+ * @author hlhelguen
+ */
+public class Article {
+    //Propriétés privées
+    private String ref;
+    private String libelle;
+    private float prixAchat;
+    private float prixVente;
+    private int stock;
+    
+    //Constructeur
+    public Article(String r, String l, float pa, float pv, int s){
+        this.ref = r;
+        this.libelle = l;
+        this.prixAchat = pa;
+        this.prixVente = pv;
+        this.stock = s;
+    }
+    
+    //Méthodes privées
+    private float marge(){
+        return this.prixVente - this.prixAchat;
+    }
+    
+    //Accesseurs
+    public String getRef(){
+        return this.ref;
+    }
+    
+    public String getLibelle(){
+        return this.libelle;
+    }    
+    
+    public float getPrixVente(){
+        return this.prixVente;
+    }  
+    
+    public int getStock(){
+        return this.stock;
+    } 
+    
+//    public void setStock(int qte){
+//        this.stock = qte;
+//    }     
+    
+    //Méthodes publiques
+    public float valeurStock(){
+        return this.prixVente * this.stock;
+    }
+    
+    public void stocker(int qte){
+        this.stock = this.stock + qte;
+    }    
+    
+    @Override
+    public String toString(){
+        String res = "Référence : " + this.ref + "\n";
+        res = res + "Libellé : " + this.libelle + "\n";
+        res = res + "Prix d'achat : " + this.prixAchat + " €\n";        
+        res = res + "Prix de vente : " + this.prixVente + " € (Marge : " + this.marge() + " €)\n";
+        res = res + "Stock : " + this.stock + " (Valeur du stock : " + this.valeurStock() + " €)\n";
+        return res;
+    }
+}
+
+
+///// Test de la classe
+
+package testarticle;
+
+/**
+ *
+ * @author hlhelguen
+ */
+public class TestArticle {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Article unArticle;
+        unArticle = new Article("CBMXE", "Casque BMX enfant", 29.90f, 35.00f, 3);
+        
+        System.out.println(unArticle.toString());
+        
+        //Afficher uniquement le libellé, le prix de vente et le prix d'achat
+        System.out.println(unArticle.getLibelle());
+        System.out.println(unArticle.getPrixVente());
+        //pas possible d'afficher le prix achat
+        
+        //unArticle.setStock(10);
+        unArticle.stocker(7);
+        
+        System.out.println(unArticle.toString());        
+    }
+}

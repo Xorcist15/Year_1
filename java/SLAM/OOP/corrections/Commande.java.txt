@@ -1,0 +1,21 @@
+public class Commande {
+	//Attributs privés
+    private String reference ;
+    private String date ;
+    private float montant ;
+    private Client leClient ;
+    
+    //Constructeur
+    public Commande(String reference , String date , Client leClient){
+        this.reference = reference ;
+        this.date = date ;
+        this.leClient = leClient ;
+        this.montant = 0 ;
+    }
+    
+	//méthodes publiques
+   
+    
+	//Accesseurs
+    
+}

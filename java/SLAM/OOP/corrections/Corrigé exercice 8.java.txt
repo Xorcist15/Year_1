@@ -1,0 +1,127 @@
+//CLasse client 
+
+public class Client {
+    //Attributs privés
+    private String reference;
+    private String nom;
+    private String ville;
+    private float chiffreAffaires;
+    
+    //Constructeur
+    public Client(String ref, String nom, String ville){
+        this.reference = ref;
+        this.nom = nom;
+        this.ville = ville;
+        this.chiffreAffaires = 0;
+    }
+    
+    //Accesseurs
+    public String getReference(){
+        return this.reference;
+    }
+    
+    public String getNom(){
+        return this.nom;
+    } 
+    
+    public String getVille(){
+        return this.ville;
+    }  
+    
+    public void setVille(String ville){
+        this.ville = ville;
+    }     
+    
+    public float getChiffreAffaires(){
+        return this.chiffreAffaires;
+    }   
+    
+    public void cumulerCa(float montant){
+        this.chiffreAffaires = this.chiffreAffaires + montant;
+    }
+    
+    public String toString(){
+        String res = "---------------------------\n";
+        res = res + "Référence : " + this.reference + "\n";
+        res = res + "Nom : " + this.nom + "\n";
+        res = res + "Ville : " + this.ville + "\n";
+        res = res + "Chiffre d'affaires : " + this.chiffreAffaires + "\n";        
+        res = res + "---------------------------\n";
+        return res;
+    }
+}
+
+//Classe Commande
+
+public class Commande {
+    private String reference ;
+    private String date ;
+    private float montant ;
+    private Client leClient ;
+    
+    
+    public Commande(String reference , String date , Client leClient){
+        this.reference = reference ;
+        this.date = date ;
+        this.leClient = leClient ;
+        this.montant = 0 ;
+    }
+    
+    public String toString(){
+        String res;
+        res = "Reference : " + this.reference + "\nDate : " + this.date + "\nMontant : " + this.montant + "\nRef Client : " + this.leClient.getReference()+ "\n Nom Client : " + this.leClient.getNom() + "\nVille CLient : "+ this.leClient.getVille();
+        return res ;
+    }
+    
+    public String getReference(){
+        return this.reference;
+    }
+    public String getDate(){
+        return this.date ;
+    }
+    public Client getLeClient(){
+        return this.leClient ;
+    }
+    public float getMontant(){
+        return this.montant ;
+    }
+    public void setMontant(float newMontant){
+        this.montant = newMontant ;
+    }
+}
+
+//Test 
+
+public class TestCommande {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Client cli1 ;
+        cli1 = new Client("666","Pedro","Colmar" );
+        
+        System.out.println(cli1.toString()) ;
+        
+        Commande com1 , com2 ;
+        
+        com1 = new Commande("123","25/02/2022",cli1) ;
+        com2 = new Commande("987","6/06/1944",cli1) ;
+        
+        com1.setMontant(1000);
+        com2.setMontant(500);
+        
+        System.out.println(com1.toString());
+        System.out.println(com2.toString());
+        
+        cli1.setVille("Brest");
+        
+        System.out.println(com1.toString());
+        System.out.println(com2.toString());
+        
+        com2.setMontant(600);
+        
+        System.out.println(com2.toString());
+    }
+    
+}

@@ -1,0 +1,10 @@
+E:\SIO\S2\SLAM\C#\TP_fichiers_sequentiels\TP_Fichiers_Sequentiels\TP_Fichiers_Sequentiels\bin\Debug\TP_Fichiers_Sequentiels.exe.config
+E:\SIO\S2\SLAM\C#\TP_fichiers_sequentiels\TP_Fichiers_Sequentiels\TP_Fichiers_Sequentiels\bin\Debug\TP_Fichiers_Sequentiels.exe
+E:\SIO\S2\SLAM\C#\TP_fichiers_sequentiels\TP_Fichiers_Sequentiels\TP_Fichiers_Sequentiels\bin\Debug\TP_Fichiers_Sequentiels.pdb
+E:\SIO\S2\SLAM\C#\TP_fichiers_sequentiels\TP_Fichiers_Sequentiels\TP_Fichiers_Sequentiels\obj\Debug\TP_Fichiers_Sequentiels.csproj.AssemblyReference.cache
+E:\SIO\S2\SLAM\C#\TP_fichiers_sequentiels\TP_Fichiers_Sequentiels\TP_Fichiers_Sequentiels\obj\Debug\TP_Fichiers_Sequentiels.GestionEleves.resources
+E:\SIO\S2\SLAM\C#\TP_fichiers_sequentiels\TP_Fichiers_Sequentiels\TP_Fichiers_Sequentiels\obj\Debug\TP_Fichiers_Sequentiels.Properties.Resources.resources
+E:\SIO\S2\SLAM\C#\TP_fichiers_sequentiels\TP_Fichiers_Sequentiels\TP_Fichiers_Sequentiels\obj\Debug\TP_Fichiers_Sequentiels.csproj.GenerateResource.cache
+E:\SIO\S2\SLAM\C#\TP_fichiers_sequentiels\TP_Fichiers_Sequentiels\TP_Fichiers_Sequentiels\obj\Debug\TP_Fichiers_Sequentiels.csproj.CoreCompileInputs.cache
+E:\SIO\S2\SLAM\C#\TP_fichiers_sequentiels\TP_Fichiers_Sequentiels\TP_Fichiers_Sequentiels\obj\Debug\TP_Fichiers_Sequentiels.exe
+E:\SIO\S2\SLAM\C#\TP_fichiers_sequentiels\TP_Fichiers_Sequentiels\TP_Fichiers_Sequentiels\obj\Debug\TP_Fichiers_Sequentiels.pdb

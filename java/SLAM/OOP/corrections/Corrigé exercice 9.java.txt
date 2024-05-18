@@ -1,0 +1,146 @@
+//Article : 
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package exercice.pkg9;
+
+/**
+ *
+ * @author gbihry
+ */
+public class Article {
+    //Attributs privés
+    private String ref;
+    private String libelle;
+    private float prixAchat;
+    private float prixVente;
+    private int stock;
+    
+    
+    //Constructeur 
+    public Article(String r, String l, float pv, float pa, int s){
+        this.ref = r;
+        this.libelle = l;
+        this.prixAchat = pa;
+        this.prixVente = pv;
+        this.stock = s;
+    }
+    
+    //Méthode publique
+    public float valeurStock(){
+        
+        return this.prixVente * this.stock;
+    }
+    
+    private float marge(){
+        return prixVente - prixAchat;
+    }
+    
+    public String toString(){
+    
+        return "Référence : " + this.ref + "\nLibellé : " + this.libelle + "\nPrix de vente : " + this.prixVente + "€" + "\nPrix d'achat : " + this.prixAchat + "€" + "\t(Marge : " + this.marge() + "€)" + "\nStock : " + this.stock + "\t(Valeur du stock : " + this.valeurStock() + "€)";
+    }
+    
+    public String getRef(){
+        return this.ref;
+    }
+    
+    public String getLibelle(){
+        return this.libelle;
+    }
+    
+    public float getPrixVente(){
+        return this.prixVente;
+    }
+    
+    public int getStock(){
+        return this.stock;
+    }
+    
+    public void stocker (int s){
+        this.stock = this.stock + s;
+    }
+}
+
+
+//LigneCommande:
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package exercice.pkg9;
+
+/**
+ *
+ * @author gbihry
+ */
+public class LigneCommande {
+    //Attributs privés
+    
+    private int quantite;
+    private Article lArticle;
+    
+    //Constructeur
+    
+    public LigneCommande(int q, Article laRt){
+        this.quantite = q;
+        this.lArticle = laRt;
+    }
+    
+    public float montantLigne(){
+        float res = (this.quantite * this.lArticle.getPrixVente());
+        return res;
+    }
+    
+    public String toString(){
+        String res = this.lArticle.getRef()+ " - ";
+        res += this.lArticle.getLibelle()+ " - ";
+        res+= this.lArticle.getPrixVente()+ " x ";
+        res += this.quantite + " - ";
+        res += this.montantLigne();
+        return res;
+    }
+    
+    
+}
+
+
+
+
+//test : 
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercice.pkg9;
+
+/**
+ *
+ * @author gbihry
+ */
+public class Exercice9 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        LigneCommande uneLigneCommande;
+        Article unArticle;
+        
+        
+        unArticle = new Article("Ipad", "Pro", 500f, 750f, 3);
+        
+        
+        uneLigneCommande = new LigneCommande(3, unArticle);
+        
+        
+        System.out.print(uneLigneCommande.toString());
+    }
+    
+}
+

@@ -1,0 +1,18 @@
+//à déclarer de façon globale au formulaire
+
+private List<Film> lesFilms;
+
+
+// à placer dans le constructeur du formulaire
+// création de la collection
+this.lesFilms = new List<Film>();
+
+
+// à placer dans le Form_Load
+//Ajout des films dans la collection en utilisant le constructeur avec le CSV
+this.lesFilms.Add(new Film("1;American Beauty;Drame;DVD"));
+this.lesFilms.Add(new Film("2;Les chevaliers du ciel;Action;TS"));
+this.lesFilms.Add(new Film("3;Fantasia;Dessin animé;DivX"));
+this.lesFilms.Add(new Film("4;Persepolis;Dessin animé;DVD"));
+this.lesFilms.Add(new Film("5;Interstellar;Science fiction;MP4"));
+this.lesFilms.Add(new Film("6;Whiplash;Drame;DVD"));

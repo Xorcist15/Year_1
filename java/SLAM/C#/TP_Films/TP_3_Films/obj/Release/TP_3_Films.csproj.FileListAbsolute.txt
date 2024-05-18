@@ -1,0 +1,11 @@
+E:\SIO\S2\SLAM\C#\TP_Films\TP_3_Films\bin\Release\TP_3_Films.exe.config
+E:\SIO\S2\SLAM\C#\TP_Films\TP_3_Films\bin\Release\TP_3_Films.exe
+E:\SIO\S2\SLAM\C#\TP_Films\TP_3_Films\bin\Release\TP_3_Films.pdb
+E:\SIO\S2\SLAM\C#\TP_Films\TP_3_Films\obj\Release\TP_3_Films.csproj.AssemblyReference.cache
+E:\SIO\S2\SLAM\C#\TP_Films\TP_3_Films\obj\Release\TP_3_Films.Form1.resources
+E:\SIO\S2\SLAM\C#\TP_Films\TP_3_Films\obj\Release\TP_3_Films.Form2.resources
+E:\SIO\S2\SLAM\C#\TP_Films\TP_3_Films\obj\Release\TP_3_Films.Properties.Resources.resources
+E:\SIO\S2\SLAM\C#\TP_Films\TP_3_Films\obj\Release\TP_3_Films.csproj.GenerateResource.cache
+E:\SIO\S2\SLAM\C#\TP_Films\TP_3_Films\obj\Release\TP_3_Films.csproj.CoreCompileInputs.cache
+E:\SIO\S2\SLAM\C#\TP_Films\TP_3_Films\obj\Release\TP_3_Films.exe
+E:\SIO\S2\SLAM\C#\TP_Films\TP_3_Films\obj\Release\TP_3_Films.pdb

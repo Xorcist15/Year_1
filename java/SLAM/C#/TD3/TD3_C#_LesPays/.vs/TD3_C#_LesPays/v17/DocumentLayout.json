@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\SIO\\S2\\SLAM\\C#\\TD3\\TD3_C#_LesPays\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3505FD63-C30F-4AC1-B0D3-B2D6546BC61D}|TD3_C#_LesPays.csproj|G:\\SIO\\S2\\SLAM\\C#\\TD3\\TD3_C#_LesPays\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3505FD63-C30F-4AC1-B0D3-B2D6546BC61D}|TD3_C#_LesPays.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3505FD63-C30F-4AC1-B0D3-B2D6546BC61D}|TD3_C#_LesPays.csproj|g:\\sio\\s2\\slam\\c#\\td3\\td3_c#_lespays\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3505FD63-C30F-4AC1-B0D3-B2D6546BC61D}|TD3_C#_LesPays.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3505FD63-C30F-4AC1-B0D3-B2D6546BC61D}|TD3_C#_LesPays.csproj|g:\\sio\\s2\\slam\\c#\\td3\\td3_c#_lespays\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3505FD63-C30F-4AC1-B0D3-B2D6546BC61D}|TD3_C#_LesPays.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "G:\\SIO\\S2\\SLAM\\C#\\TD3\\TD3_C#_LesPays\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "G:\\SIO\\S2\\SLAM\\C#\\TD3\\TD3_C#_LesPays\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAowKMAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T12:05:45.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "G:\\SIO\\S2\\SLAM\\C#\\TD3\\TD3_C#_LesPays\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "G:\\SIO\\S2\\SLAM\\C#\\TD3\\TD3_C#_LesPays\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAADwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T11:16:11.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "G:\\SIO\\S2\\SLAM\\C#\\TD3\\TD3_C#_LesPays\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "G:\\SIO\\S2\\SLAM\\C#\\TD3\\TD3_C#_LesPays\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T11:15:48.929Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

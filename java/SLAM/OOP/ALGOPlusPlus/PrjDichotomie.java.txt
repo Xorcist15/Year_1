@@ -1,0 +1,64 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package prjdichotomie;
+
+/**
+ *
+ * @author hlhelguen
+ */
+public class PrjDichotomie {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int[] tab = {18,19,27,33,41,52,67,71,82,92};
+        
+        int nb = 112;
+        int res = dicho(nb, tab);
+        
+        if(res == -1){
+            System.out.println(nb + " n'est pas présent dans le tableau");
+        }
+        else{
+            System.out.println(nb + " est présent dans le tableau à l'indice " + res);
+        }
+        
+    }
+    
+    //fonction dico
+    public static int dicho(int nb, int[] tab){
+        //déclaration des sentinelles
+        int d,f,m;
+        int res = -1;
+        boolean trouve = false;
+        
+        //Situation de départ
+        d = 0;
+        f = tab.length - 1;
+        m = (int)((d + f) / 2);
+    
+        while(d <= f && trouve == false){
+            //test si tab[m] = nb
+            if(tab[m] == nb){
+                res = m;
+                trouve = true;
+            }
+            else{
+                //test du coté à garder
+                if(nb < tab[m]){
+                    f = m - 1;
+                }else{
+                    d = m + 1;
+                }
+            }
+            //je recalcule le milieu
+            m = (int)((d + f) / 2);
+        }
+        
+        //retour du résultat
+        return res;
+    }
+}

@@ -1,0 +1,83 @@
+package testarticle;
+
+/**
+ *
+ * @author hlhelguen
+ */
+public class Client {
+    //Attributs privés
+    private String reference;
+    private String nom;
+    private String ville;
+    private float chiffreAffaires;
+    
+    //Constructeur
+    public Client(String ref, String nom, String ville){
+        this.reference = ref;
+        this.nom = nom;
+        this.ville = ville;
+        this.chiffreAffaires = 0;
+    }
+
+    //Constructeur alternatif	
+    public Client(String ref){
+        this.reference = ref;
+        this.nom = "Anonyme";
+        this.ville = "Inconnue";
+        this.chiffreAffaires = 0;
+    }	
+    
+    //Accesseurs
+    public String getReference(){
+        return this.reference;
+    }
+    
+    public String getNom(){
+        return this.nom;
+    } 
+    
+    public String getVille(){
+        return this.ville;
+    }  
+    
+    public void setNom(String nom){
+        this.nom = nom;
+    } 
+	
+    public void setVille(String ville){
+        this.ville = ville;
+    }     
+    
+    public float getChiffreAffaires(){
+        return this.chiffreAffaires;
+    }   
+    
+    public void cumulerCa(float montant){
+        this.chiffreAffaires = this.chiffreAffaires + montant;
+    }
+    
+    public String toString(){
+        String res = "---------------------------\n";
+        res = res + "Référence : " + this.reference + "\n";
+        res = res + "Nom : " + this.nom + "\n";
+        res = res + "Ville : " + this.ville + "\n";
+        res = res + "Chiffre d'affaires : " + this.chiffreAffaires + "\n";        
+        res = res + "---------------------------\n";
+        return res;
+    }
+}
+
+
+//Partie test de la classe Client
+
+        Client c1;
+        c1 = new Client("CLI51");
+        
+        System.out.println(c1.toString());
+
+        c1.setNom("Gradt");
+		c1.setVille("Colmar");
+		
+        c1.cumulerCa(1500);
+        
+        System.out.println(c1.toString());

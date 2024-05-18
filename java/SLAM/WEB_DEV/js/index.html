@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>JS Intro</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Client</legend>
+            <label for="">Nom et prénom: </label>
+            <input type="text"> <br>
+            <label for="">Adresse: </label>
+            <input type="text"> <br>
+            <label for="">Code Postal: </label>
+            <input type="text"> <br>
+            <label for="">Pays: </label>
+            <input type="text"> <br>
+            <label for="">Commentaire</label><br>
+            <textarea name="" id="" rows="6" style="width: 100%"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Commande</legend>
+            <!--
+                modèle doit etre en liste
+            -->
+            <label for="">Modèle: </label>
+            <input type="text"> <br>
+            <label for="">Taille: </label>
+            <input type="range" min="1" max="4" step="1"> <br>
+            <div style="display: flex; justify-content: space-evenly; width: 180px; position: relative; left: 20px">
+                <div>S</div>
+                <div>M</div>
+                <div>L</div>
+                <div>XL</div>
+            </div>
+            <label for="">Taille: </label>
+            <input type="number" min="1" max="10" value="1"> <br>
+        </fieldset>
+        <input type="submit" value="Commander">
+        <input type="submit" value="Recommencer">
+        <input type="submit" value="Afficher la commande" onClick="alert('Bonjour')">
+    </form>
+</body>
+</html>

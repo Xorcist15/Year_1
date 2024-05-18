@@ -1,0 +1,56 @@
+1
+SELECT id, dateM, idClubVisite, idClubVisiteur
+FROM Match
+WHERE id=2;
+
+2
+SELECT dateM
+FROM Match
+ORDER BY dateM ;
+
+3
+SELECT id, idClubVisite, idClubVisiteur
+FROM Match
+WHERE idClubVisite = 1 OR idClubVisiteur = 1
+AND dateM LIKE "2024/01/%%"
+
+4
+SELECT idJoueur, nbpoint
+FROM Participer
+WHERE idmatch = 1
+ORDER BY nbpoint DESC;
+
+5
+SELECT SUM(nbFaute)
+FROM Participer
+WHERE IdMatch = 1 ;
+
+6
+SELECT Count(*)
+FROM Joueur
+WHERE idClub = 3 ;
+
+7
+SELECT idJoueur, SUM(nbPoint)
+FROM Participer
+GROUP BY idJoueur ;
+
+8
+SELECT idClubVisiteur, AVG(scoreClubVisiteur)
+FROM Match
+GROUP BY idClubVisiteur
+ORDER BY 2 DESC;
+
+9
+SELECT nomContact, telephoneContact
+FROM Club
+JOIN Match ON idClubVisite = Club.id
+WHERE Match.id = 6;
+
+10
+SELECT Joueur.nom, Joueur.prenom, Club.nom, SUM(nbPoint), SUM(nbFaute)
+FROM Joueur
+JOIN Participer ON Joueur .id = Participer.idJoueur
+JOIN Club ON Joueur.idClub = Club.id
+GROUP BY Joueur.nom, Joueur.prenom, Club.nom
+ORDER BY 4 DESC;

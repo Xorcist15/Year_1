@@ -1,0 +1,219 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
+namespace TD3_C__LesPays
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnQuitter_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //"code ; nom ; capitale ; monnaie ; code monnaie ; code continent"
+
+            List<string> lesPays = init_lesPays();
+
+            foreach (string s in lesPays)
+            {
+                string[] temp = s.Split(';');
+                comboBoxLesPays.Items.Add(temp[1]);
+            }
+        }
+
+        private void comboBoxLesPays_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            /*String pays = comboBoxLesPays.SelectedIndex;
+
+            Console.WriteLine(pays);
+*/
+            /*String[] temp = pays.Split(';');
+
+            //lesPays.Add("UK;Royaume-Uni (le);Londres;la livre sterling;GBP;EU");
+
+            lblTitre.Text = temp[1];
+            lblCapitale.Text = temp[2];
+            lblMonnaie.Text = temp[3] + "(" + temp[4] + ")";*/
+        }
+
+        private void radioTous_CheckedChanged(object sender, EventArgs e)
+        {
+            //"code ; nom ; capitale ; monnaie ; code monnaie ; code continent"
+
+            List<string> lesPays = init_lesPays();
+
+            foreach (string s in lesPays)
+            {
+                string[] temp = s.Split(';');
+                comboBoxLesPays.Items.Add(temp[1]);
+            }
+        }
+
+        private void radioAfrique_CheckedChanged(object sender, EventArgs e)
+        {
+            /*//"code ; nom ; capitale ; monnaie ; code monnaie ; code continent"
+
+            comboBoxLesPays.Items.Clear();
+
+            List<string> lesPays = init_lesPays();
+
+            foreach (string s in lesPays)
+            {
+                string[] temp = s.Split(';');
+                if (temp[5] == "AF")
+                {
+                    comboBoxLesPays.Items.Add(temp[1]);
+                }
+            }*/
+
+            filter_lesPays("AF");
+        }
+
+        private void radioAmNord_CheckedChanged(object sender, EventArgs e)
+        {
+            //"code ; nom ; capitale ; monnaie ; code monnaie ; code continent"
+
+            comboBoxLesPays.Items.Clear();
+
+            List<string> lesPays = init_lesPays();
+
+            foreach (string s in lesPays)
+            {
+                string[] temp = s.Split(';');
+                if (temp[5] == "NA")
+                {
+                    comboBoxLesPays.Items.Add(temp[1]);
+                }
+            }
+        }
+
+        private void radioAmSud_CheckedChanged(object sender, EventArgs e)
+        {
+            //"code ; nom ; capitale ; monnaie ; code monnaie ; code continent"
+
+            comboBoxLesPays.Items.Clear();
+
+            List<string> lesPays = init_lesPays();
+
+            foreach (string s in lesPays)
+            {
+                string[] temp = s.Split(';');
+                if (temp[5] == "SA")
+                {
+                    comboBoxLesPays.Items.Add(temp[1]);
+                }
+            }
+        }
+
+        private void radioAntartique_CheckedChanged(object sender, EventArgs e)
+        {
+            //"code ; nom ; capitale ; monnaie ; code monnaie ; code continent"
+
+            comboBoxLesPays.Items.Clear();
+
+            List<string> lesPays = init_lesPays();
+
+            foreach (string s in lesPays)
+            {
+                string[] temp = s.Split(';');
+                if (temp[5] == "AN")
+                {
+                    comboBoxLesPays.Items.Add(temp[1]);
+                }
+            }
+        }
+
+        private void radioAsie_CheckedChanged(object sender, EventArgs e)
+        {
+            //"code ; nom ; capitale ; monnaie ; code monnaie ; code continent"
+
+            comboBoxLesPays.Items.Clear();
+
+            List<string> lesPays = init_lesPays();
+
+            foreach (string s in lesPays)
+            {
+                string[] temp = s.Split(';');
+                if (temp[5] == "AS")
+                {
+                    comboBoxLesPays.Items.Add(temp[1]);
+                }
+            }
+        }
+
+        private void radioEurope_CheckedChanged(object sender, EventArgs e)
+        {
+            //"code ; nom ; capitale ; monnaie ; code monnaie ; code continent"
+
+            comboBoxLesPays.Items.Clear();
+
+            List<string> lesPays = init_lesPays();
+
+            foreach (string s in lesPays)
+            {
+                string[] temp = s.Split(';');
+                if (temp[5] == "EU")
+                {
+                    comboBoxLesPays.Items.Add(temp[1]);
+                }
+            }
+        }
+
+        private void radioOceanie_CheckedChanged(object sender, EventArgs e)
+        {
+            filter_lesPays("OC");
+        }
+
+        private List<string> init_lesPays()
+        {
+            List<string> lesPays = new List<string>();
+
+            lesPays.Add("AD;Andorre (l’);Andorre-la-Vieille;l’euro;EUR;EU");
+            lesPays.Add("AE;Émirats arabes unis (les);Abou Dhabi;le dirham des Émirats arabes unis;AED;AS");
+            lesPays.Add("AF;Afghanistan (l’);Kaboul;l’afghani;AFN;AS");
+            lesPays.Add("AG;Antigua-et-Barbuda;Saint John’s;le dollar des Caraïbes orientales;XCD;NA");
+            lesPays.Add("AI;Anguilla;The Valley;le dollar des Caraïbes orientales;XCD;NA");
+            lesPays.Add("AL;Albanie (l’);Tirana;le lek;ALL;EU");
+            lesPays.Add("AM;Arménie (l’);Erevan;le dram;AMD;AS");
+            lesPays.Add("AO;Angola (l’);Luanda;le kwanza;AOA;AF");
+            lesPays.Add("AQ;Antarctique (l’);non renseigné;non renseigné;non renseigné;AN");
+            lesPays.Add("AR;Argentine (l’);Buenos Aires;le peso argentin;ARS;SA");
+            lesPays.Add("UK;Royaume-Uni (le);Londres;la livre sterling;GBP;EU");
+
+            return lesPays;
+        }
+
+        private void filter_lesPays(string filter)
+        {
+            //"code ; nom ; capitale ; monnaie ; code monnaie ; code continent"
+
+            comboBoxLesPays.Items.Clear();
+
+            List<string> lesPays = init_lesPays();
+
+            foreach (string s in lesPays)
+            {
+                string[] temp = s.Split(';');
+                if (temp[5] == filter)
+                {
+                    comboBoxLesPays.Items.Add(temp[1]);
+                }
+            }
+        }
+    }
+}
